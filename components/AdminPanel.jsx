@@ -16,7 +16,7 @@ const AdminPanel = () => {
 
     const updateStatus = (id) => {
         return (status) => {  
-            axios.post("supportticketbackend.azurewebsites.net/supportTicket/updateStatus", {
+            axios.post(" https://supportticketbackend.azurewebsites.net/supportTicket/updateStatus", {
                 id, status
             })
             .then(({status, data}) => {
@@ -70,7 +70,7 @@ const AdminPanel = () => {
 
 
     useEffect(() => {
-        axios.get("supportticketbackend.azurewebsites.net/supportTicket/getRequests")
+        axios.get("https://supportticketbackend.azurewebsites.net/supportTicket/getRequests")
         .then((res) => {
             
             setSupportTickets(res.data);
