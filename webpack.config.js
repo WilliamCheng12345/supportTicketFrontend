@@ -34,26 +34,26 @@ module.exports = {
     ]
   },
 
-  // devServer: {
-  //   static: path.join(__dirname, 'client/public'),
+  devServer: {
+    static: path.join(__dirname, 'client/public'),
 
-  //   compress: true,
+    compress: true,
 
-  //   port: 8080,
+    port: 8080,
 
-  //   hot: true,
-  //   allowedHosts: 'all',
-  //   historyApiFallback: true,
-  //   proxy: [
-  //     {
-  //       context: ['/supportTicket'],
-  //       target: 'http://localhost:3000'
-  //     }
-  //   ]
-  // },
-  // resolve: {
-  //   extensions: ['.js', '.jsx']
-  // },
+    hot: true,
+    allowedHosts: 'all',
+    historyApiFallback: true,
+    proxy: [
+      {
+        context: ['/supportTicket'],
+        target: 'http://localhost:3000'
+      }
+    ]
+  },
+  resolve: {
+    extensions: ['.js', '.jsx']
+  },
 
   devtool: 'eval'
 
